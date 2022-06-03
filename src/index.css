@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -11,23 +11,15 @@
 }
 
 :root {
-    --color-light: hsl(0, 0%, 96%);
-    --color-light-variant: hsl(0, 0%, 93%);
-    --color-font: hsl(240, 3%, 47%);
-    --color-header: hsl(240, 3%, 14%);
-    --color-primary: hsl(188, 61%, 60%);
-    --color-primary-variant: hsl(188, 57%, 56%);
-    --color-primary-opacity: hsla(188, 61%, 60%, 0.315);
-    --color-primary-opacity-mask: hsl(189, 51%, 85%);
-    --color-secondary: hsl(11, 38%, 50%);
-    --color-secondary-variant: hsl(11, 46%, 45%);
-    --color-dark-bg: hsl(209, 85%, 11%);
-    --color-dark-font: hsl(0, 0%, 90%);
-    --color-dark-primary: hsl(199, 89%, 21%);
-    --color-dark-primary-variant: hsl(199, 87%, 12%);
-    --color-dark-secondary: hsl(35, 78%, 66%);
-    --font-text: 'Poppins', sans-serif;
-    --font-header: 'Playfair Display', serif;
+    --color-light: hsl(0, 0%, 100%);
+    --color-light-variant: hsla(0, 0%, 0%, 0.05);
+    --color-font: hsla(0, 0%, 0%, 0.75);
+    --color-primary: hsl(342, 87%, 73%);
+    --color-primary-variant: hsl(342, 87%, 58%);
+    --color-secondary: hsl(0, 0%, 13%);
+    --color-dark: hsl(0, 0%, 36%);
+    --color-dark-variant: hsl(0, 0%, 65%);
+    --font-text: 'Quicksand', sans-serif;
 }
 
 /*============== BASE ==============*/
@@ -52,11 +44,15 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5 {
-    font-weight: 500;
-    font-family: var(--font-header);
-    color: var(--color-header);
- }
+h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+
+h1 span {
+    color: var(--color-primary);
+}
 
 img {
     max-width: 100%;
@@ -73,12 +69,12 @@ a:hover {
 }
 
 /*============== REUSABLE CSS CLASSES ==============*/
-section {
+.section {
     padding-bottom: 2rem;
     padding-top: 4rem;
 }
 
-section:first-child {
+.section:first-child {
     padding: 0;
 }
 
@@ -128,8 +124,13 @@ section:first-child {
     transition: .7s;
 }
 
-.btn__primary svg {
-    margin: 0 5px;
+.btn__line {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-dark);
+    border-radius: 0;
+    padding: 5px;
+    color: var(--color-light);
 }
 
 /*============== LAYOUT ==============*/
@@ -149,24 +150,12 @@ section:first-child {
 }
 
 @media (min-width: 768px) {
-    .container {
-        margin: 0 auto;
-        width: 740px;
-    }
 }
 
 @media (min-width: 992px) {
-    .container {
-        width: 900px;
-        max-width: 900px;
-    }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        width: 1100px;
-        max-width: 1100px;
-    }
 }
 
 @media (min-width: 1400px) {
