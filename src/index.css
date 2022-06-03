@@ -1,13 +1,174 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --color-light: hsl(0, 0%, 96%);
+    --color-light-variant: hsl(0, 0%, 93%);
+    --color-font: hsl(240, 3%, 47%);
+    --color-header: hsl(240, 3%, 14%);
+    --color-primary: hsl(188, 61%, 60%);
+    --color-primary-variant: hsl(188, 57%, 56%);
+    --color-primary-opacity: hsla(188, 61%, 60%, 0.315);
+    --color-primary-opacity-mask: hsl(189, 51%, 85%);
+    --color-secondary: hsl(11, 38%, 50%);
+    --color-secondary-variant: hsl(11, 46%, 45%);
+    --color-dark-bg: hsl(209, 85%, 11%);
+    --color-dark-font: hsl(0, 0%, 90%);
+    --color-dark-primary: hsl(199, 89%, 21%);
+    --color-dark-primary-variant: hsl(199, 87%, 12%);
+    --color-dark-secondary: hsl(35, 78%, 66%);
+    --font-text: 'Poppins', sans-serif;
+    --font-header: 'Playfair Display', serif;
+}
+
+/*============== BASE ==============*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: var(--font-text);
+    background: var(--color-light);
+    color: var(--color-font);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+    font-family: var(--font-header);
+    color: var(--color-header);
+ }
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--color-primary);
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--color-header);
+    transition: .3s;
+}
+
+/*============== REUSABLE CSS CLASSES ==============*/
+section {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+section:first-child {
+    padding: 0;
+}
+
+.section__title {
+    font-size: 1.75rem;
+    color: var(--color-header);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.section__subtitle {
+    display: block;
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+    color: var(--color-font);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.section__title, 
+.section__subtitle {
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 1rem;
+    font-family: var(--font-text);
+}
+
+.btn__primary {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-light);
+    transition: .7s;
+}
+
+.btn__primary:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    border-color: var(--color-secondary);
+    transition: .7s;
+}
+
+.btn__primary svg {
+    margin: 0 5px;
+}
+
+/*============== LAYOUT ==============*/
+.container {
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+        width: 740px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 900px;
+        max-width: 900px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+        max-width: 1100px;
+    }
+}
+
+@media (min-width: 1400px) {
+
 }
