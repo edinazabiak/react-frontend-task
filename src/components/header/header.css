@@ -71,7 +71,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1.875rem;
+    margin: 1rem;
 }
 
 .header__center {
@@ -173,6 +173,10 @@ header {
 }
 
 @media (min-width: 992px) {
+    .header__top {
+        margin: 1.875rem 3.125rem 1.125rem;
+    }
+
     .header__left-side {
         display: block;
     }
@@ -192,6 +196,7 @@ header {
         color: var(--color-dark-variant);
         font-weight: 600;
         font-size: 1rem;
+        padding-left: 0;
     }
 
     .header__left-side .nav__item:first-child:hover {
@@ -229,13 +234,12 @@ header {
     .nav__desktop ul li:hover .nav__item {
         color: var(--color-primary);
     }
-
-    .input__search {
-        width: 210px;
-    }
 }
 
 @media (min-width: 1200px) {
+    .input__search {
+        width: 210px;
+    }
 }
 
 @media (min-width: 1400px) {
