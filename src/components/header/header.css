@@ -71,7 +71,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1.875rem;
 }
 
 .header__center {
@@ -89,6 +89,7 @@ header {
 .nav__item {
     color: var(--color-light);
     transition: .5s;
+    font-size: 1rem;
 }
 
 .nav__item:hover {
@@ -107,6 +108,7 @@ header {
 }
 
 .header__icons .nav__item {
+    font-size: 1.25rem;
     margin-right: 1.25rem;
 }
 
@@ -119,8 +121,8 @@ header {
     border-bottom: 1px solid var(--color-dark);
     font-family: var(--font-text);
     color: var(--color-dark);
-    font-size: .9rem;
-    padding: 0.313rem;
+    font-size: .875rem;
+    padding: .313rem;
     margin-bottom: 1rem;
     width: calc(100% - 1.875rem);
 }
@@ -147,12 +149,90 @@ header {
 }
 
 @media (min-width: 576px) {
+    .header__top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__right-side {
+        flex-direction: row;
+        margin-left: 2rem;
+    }
+
+    .header__icons {
+        margin-left: 1rem;
+    }
+
+    .input__search {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
+    .header__left-side {
+        display: block;
+    }
+
+    .header__left-side .nav__item {
+        font-size: 0.75rem;
+        padding: 0 .8rem;
+        border-right: 1px solid var(--color-dark);
+    }
+
+    .header__left-side .nav__item:first-child,
+    .header__left-side .nav__item:last-child {
+        border: none;
+    }
+
+    .header__left-side .nav__item:first-child {
+        color: var(--color-dark-variant);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .header__left-side .nav__item:first-child:hover {
+        color: var(--color-primary);
+    }
+
+    .nav__mobile--hamburger-icon {
+        display: none;
+    }
+
+    .navigation__desktop {
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    .nav__desktop ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav__desktop ul li {
+        text-transform: uppercase;
+        padding: .5rem 1rem;
+        border-bottom: 3px solid transparent;
+        font-weight: 500;
+    }
+
+    .nav__desktop ul li:hover {
+        border-bottom: 3px solid var(--color-primary);
+    }
+
+    .nav__desktop ul li:hover .nav__item {
+        color: var(--color-primary);
+    }
+
+    .input__search {
+        width: 210px;
+    }
 }
 
 @media (min-width: 1200px) {
