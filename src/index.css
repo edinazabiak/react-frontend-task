@@ -92,7 +92,7 @@ a:hover {
     margin-right: 1.5rem;
 }
 
-.section__title, 
+.section__title,
 .section__subtitle {
     text-align: center;
 }
@@ -135,13 +135,15 @@ a:hover {
 }
 
 /*============== LAYOUT ==============*/
-.container {
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2rem 3rem;
 }
+
+.container {}
 
 .grid {
     display: grid;
@@ -150,17 +152,37 @@ a:hover {
 
 
 @media (min-width: 576px) {
+    .container {
+        width: 479px;
+    }
 }
 
 @media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
 }
 
 @media (min-width: 992px) {
+    .container {
+        width: 920px;
+    }
 }
 
 @media (min-width: 1200px) {
+    .container {
+        width: 1120px;
+    }
 }
 
 @media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
 
+@media(min-width: 1840px) {
+    .container {
+        width: 1780px;
+    }
 }

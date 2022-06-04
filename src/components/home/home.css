@@ -28,22 +28,24 @@
     width: 100%;
 }
 
-.prev,
-.next {
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 1.25rem;
-    height: 1.25rem;
-    padding: 0;
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: 0;
-    background: 0 0;
-    z-index: 1;
+.home__swiper .swiper-button-next::after {
+    margin-right: 1.25rem;
+}
+
+.home__swiper .swiper-button-prev::after {
+    margin-left: 1.25rem;
+}
+
+.home__swiper .swiper-button-next::after,
+.home__swiper .swiper-button-prev::after {
+    color: var(--color-secondary);
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.home__swiper .swiper-pagination .swiper-pagination-bullet-active,
+.home__swiper .swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--color-secondary);
 }
 
 @media (min-width: 576px) {

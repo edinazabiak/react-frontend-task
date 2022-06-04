@@ -1,7 +1,7 @@
 .highlight__container {
     background-color: var(--color-primary);
     width: 100%;
-    height: 31.25rem;
+    height: 500px;
     background: linear-gradient(0deg, rgba(246, 125, 161, .9), rgba(246, 125, 161, .9)), url('../../assets/Mask\ Group.png');
     background-size: cover;
     padding: 0 .625rem;
@@ -28,41 +28,15 @@
 }
 
 @media(min-width: 576px) {
-    .highlight__container {
-        width: 479px;
-    }
-
     .highlight__container h2 {
         font-size: 3rem;
     }
 }
 
-@media (min-width: 768px) {
-    .highlight__container {
-        width: 720px;
-    }
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 992px) {
-    .highlight__container {
-        width: 920px;
-    }
-}
+@media (min-width: 992px) {}
 
-@media (min-width: 1200px) {
-    .highlight__container {
-        width: 1120px;
-    }
-}
+@media (min-width: 1200px) {}
 
-@media (min-width: 1400px) {
-    .highlight__container {
-        width: 1320px;
-    }
-}
-
-@media(min-width: 1840px) {
-    .highlight__container {
-        width: 1780px;
-    }
-}
+@media (min-width: 1400px) {}

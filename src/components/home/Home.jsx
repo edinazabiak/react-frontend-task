@@ -16,9 +16,14 @@ export default function Home() {
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={10}
             slidesPerView={1}
-            pagination
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
             navigation={{ clickable: true }}
-            loop={true}>
+            loop={true}
+            className="home__swiper">
             <SwiperSlide>
                 <div className="home__item">
                     <img className='home__img' src={IMG} alt="" />

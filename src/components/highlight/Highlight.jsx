@@ -5,8 +5,8 @@ import { BsArrowRight } from 'react-icons/bs'
 export default function Highlight() {
 
     return (
-        <section className='container'>
-            <div className="highlight__container">
+        <section className='section'>
+            <div className="container highlight__container">
                 <h2>A természetes szépségért</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                 <button className='btn btn__primary'>
