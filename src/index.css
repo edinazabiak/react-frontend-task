@@ -67,38 +67,8 @@ a:hover {
 }
 
 /*============== REUSABLE CSS CLASSES ==============*/
-.section {
-    padding-bottom: 2rem;
-    padding-top: 4rem;
-}
-
-.section:first-child {
-    padding: 0;
-}
-
-.section__title {
-    font-size: 1.75rem;
-    color: var(--color-header);
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.section__subtitle {
-    display: block;
-    margin-bottom: 3rem;
-    font-size: 1.25rem;
-    color: var(--color-font);
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.section__title,
-.section__subtitle {
-    text-align: center;
-}
-
 .btn {
-    padding: .7rem 2rem;
+    padding: .6rem 2rem;
     border-width: 1px;
     border-style: solid;
     font-size: 1rem;
@@ -140,10 +110,8 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 3rem;
+    margin: 2rem 1rem;
 }
-
-.container {}
 
 .grid {
     display: grid;
@@ -153,7 +121,7 @@ a:hover {
 
 @media (min-width: 576px) {
     .container {
-        width: 479px;
+        width: 520px;
     }
 }
 
