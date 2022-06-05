@@ -1,0 +1,143 @@
+.items__container {
+    width: 100%;
+    text-align: center;
+    margin-top: 4.375rem;
+    margin-bottom: 4.563rem;
+    margin-bottom: 4.063rem;
+}
+
+.items__swiper {
+    margin-bottom: 4.625rem;
+}
+
+.section__title {
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+.swiper-slide {
+    width: 220px;
+}
+
+.wishlist__heart {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent var(--color-light) transparent transparent;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.wishlist__icon {
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    position: absolute;
+    right: -50px;
+    top: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.wishlist__icon:hover {
+    color: var(--color-primary);
+}
+
+.item__title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 12px 0;
+    color: var(--color-secondary);
+}
+
+.item__title:hover {
+    color: var(--color-primary);
+}
+
+.item__title h4 {
+    font-weight: 500;
+}
+
+.item__description {
+    font-size: 0.875rem;
+    color: var(--color-dark-variant);
+    margin: 12px 0;
+}
+
+.item__rating {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__star {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    fill: var(--color-primary);
+}
+
+.item__rating--number {
+    color: var(--color-dark-variant);
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+}
+
+.item__pricing {
+    margin: 12px 0;
+}
+
+del {
+    text-decoration: line-through;
+    color: var(--color-dark-variant);
+    font-size: .875rem;
+    margin-right: 1rem;
+}
+
+ins {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+
+del::after, ins::after {
+    content: " Ft"
+}
+
+.item__shop {
+    margin: 1.25rem 0;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+    .swiper-slide {
+        width: 257.5px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .swiper-slide {
+        width: 308px;
+    }
+}
+
+@media(min-width: 1840px) {
+    .swiper-slide {
+        width: 400px;
+    }
+}

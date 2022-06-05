@@ -1,11 +1,10 @@
 import React from 'react'
 import './home.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Navigation, Pagination, A11y } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import 'swiper/css/scrollbar'
 import { BsArrowRight } from 'react-icons/bs'
 import IMG from '../../assets/nagyban.jpg'
 
@@ -13,7 +12,7 @@ export default function Home() {
 
     return (
         <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, A11y]}
             spaceBetween={10}
             slidesPerView={1}
             autoplay={{

@@ -12,13 +12,13 @@
 
 :root {
     --color-light: hsl(0, 0%, 100%);
-    --color-light-variant: hsla(0, 0%, 0%, 0.05);
+    --color-light-variant: hsl(345, 15%, 95%);
     --color-font: hsla(0, 0%, 0%, 0.75);
     --color-primary: hsl(342, 87%, 73%);
     --color-primary-variant: hsl(342, 87%, 58%);
     --color-secondary: hsl(0, 0%, 13%);
     --color-dark: hsl(0, 0%, 36%);
-    --color-dark-variant: hsl(0, 0%, 65%);
+    --color-dark-variant: hsl(0, 0%, 64%);
     --font-text: 'Quicksand', sans-serif;
 }
 
@@ -74,6 +74,7 @@ a:hover {
     font-size: 1rem;
     font-family: var(--font-text);
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn__primary {
@@ -86,10 +87,18 @@ a:hover {
 }
 
 .btn__primary:hover {
-    background-color: transparent;
-    color: var(--color-secondary);
-    border-color: var(--color-secondary);
+    color: var(--color-primary);
     transition: .7s;
+}
+
+.btn__secondary {
+    background-color: transparent;
+    transition: .7s;
+}
+
+.btn__secondary:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 .btn__line {
@@ -110,7 +119,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 1rem;
+    margin: 0 1rem;
 }
 
 .grid {

@@ -44,28 +44,28 @@ export default function Mosaic() {
             <div className="container mosaic__container">
                 <div className="mosaic__box">
                     <div className="mosaic__big" style={divStyle1}>
-                        <h3 className="mosaic__title">Heading</h3>
+                        <h3 className="mosaic__title"><a href="#" className='mosaic__item'>Heading</a></h3>
                     </div>
                     <div className="mosaic__small">
                         <div className="mosaic__small--left" style={divStyle2}>
-                            <h3 className="mosaic__title mosaic__title--light">Heading</h3>
+                            <h3 className="mosaic__title"><a href="#" className='mosaic__item mosaic__title--light'>Heading</a></h3>
                         </div>
                         <div className="mosaic__small--right" style={divStyle3}>
-                            <h3 className="mosaic__title mosaic__title--right">Heading</h3>
+                            <h3 className="mosaic__title mosaic__title--right"><a href="#" className='mosaic__item'>Heading</a></h3>
                         </div>
                     </div>
                 </div>
                 <div className="mosaic__box">
                     <div className="mosaic__small">
                         <div className="mosaic__small--left" style={divStyle4}>
-                            <h3 className="mosaic__title">Heading</h3>
+                            <h3 className="mosaic__title"><a href="#" className='mosaic__item'>Heading</a></h3>
                         </div>
                         <div className="mosaic__small--right" style={divStyle5}>
-                            <h3 className="mosaic__title mosaic__title--light mosaic__title--right">Heading</h3>
+                            <h3 className="mosaic__title mosaic__title--right"><a href="#" className='mosaic__item mosaic__title--light'>Heading</a></h3>
                         </div>
                     </div>
                     <div className="mosaic__big" style={divStyle6}>
-                        <h3 className="mosaic__title mosaic__title--right">Heading</h3>
+                        <h3 className="mosaic__title mosaic__title--right"><a href="#" className='mosaic__item'>Heading</a></h3>
                     </div>
                 </div>
             </div>
