@@ -254,7 +254,7 @@ header {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .nav__desktop ul li {
         text-transform: uppercase;
         padding: .5rem 1rem;
@@ -277,6 +277,4 @@ header {
     }
 }
 
-@media (min-width: 1400px) {
-
-}
+@media (min-width: 1400px) {}

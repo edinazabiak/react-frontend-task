@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './header.css'
 import { BsSearch, BsPerson, BsSuitHeart } from 'react-icons/bs'
 import { AiOutlineShopping, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import { MdOutlineScience } from 'react-icons/md'
 import { IoIosArrowDown } from 'react-icons/io'
 import { CSSTransition } from 'react-transition-group'
 
@@ -54,7 +53,8 @@ export default function Header() {
                     <div>
                         <a href="#" className='nav__item'>Kapcsolat</a>
                         <a href="#" className='nav__item'>Rólunk</a>
-                        <a href="#" className='nav__item'>Fizetés, szállítás <IoIosArrowDown /></a>
+                        <a href="#" className='nav__item'>
+                            Fizetés, szállítás <IoIosArrowDown /></a>
                     </div>
                 </div>
                 <div className="header__center">

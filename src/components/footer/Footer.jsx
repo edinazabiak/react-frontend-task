@@ -69,7 +69,7 @@ export default function Footer() {
                 <div className="footer__language">
                     <a href="#" className='language__active'>Hu</a>
                     <a href="#">En</a>
-                    <div className='language__select'>
+                    <div className='language__select'  onMouseLeave={() => setActive(false)}>
                         <div className="select" onClick={() => setActive(!active)}>
                             {selected}
                             <IoIosArrowDown className='select__icon' />
