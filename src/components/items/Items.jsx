@@ -1,7 +1,6 @@
 import React from 'react'
 import './items.css'
-import { BsArrowRight, BsStarFill, BsStar } from 'react-icons/bs'
-import { AiOutlineHeart } from 'react-icons/ai'
+import { BsSuitHeart, BsArrowRight, BsStarFill, BsStar } from 'react-icons/bs'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Scrollbar, FreeMode, A11y } from 'swiper'
 import 'swiper/css'
@@ -34,7 +33,7 @@ export default function Items() {
                         <div className="item__box">
                             <div className="item__header">
                                 <div className="wishlist__heart">
-                                    <AiOutlineHeart className='wishlist__icon' />
+                                    <BsSuitHeart className='wishlist__icon' />
                                 </div>
                                 <img src={ITEM1} alt="Kép a termékről." className='item__img' />
                             </div>
@@ -61,7 +60,7 @@ export default function Items() {
                         <div className="item__box">
                             <div className="item__header">
                                 <div className="wishlist__heart">
-                                    <AiOutlineHeart className='wishlist__icon' />
+                                    <BsSuitHeart className='wishlist__icon' />
                                 </div>
                                 <img src={ITEM2} alt="Kép a termékről." className='item__img' />
                             </div>
@@ -88,7 +87,7 @@ export default function Items() {
                         <div className="item__box">
                             <div className="item__header">
                                 <div className="wishlist__heart">
-                                    <AiOutlineHeart className='wishlist__icon' />
+                                    <BsSuitHeart className='wishlist__icon' />
                                 </div>
                                 <img src={ITEM3} alt="Kép a termékről." className='item__img' />
                             </div>
@@ -115,7 +114,7 @@ export default function Items() {
                         <div className="item__box">
                             <div className="item__header">
                                 <div className="wishlist__heart">
-                                    <AiOutlineHeart className='wishlist__icon' />
+                                    <BsSuitHeart className='wishlist__icon' />
                                 </div>
                                 <img src={ITEM4} alt="Kép a termékről." className='item__img' />
                             </div>

@@ -1,7 +1,7 @@
 footer {
     background-color: var(--color-secondary);
     color: var(--color-dark-variant);
-    font-size: 0.875rem;
+    font-size: var(--size-14);
 }
 
 .footer__top {
@@ -23,7 +23,7 @@ footer {
 }
 
 .footer__links .nav__item {
-    font-size: .875rem;
+    font-size: var(--size-14);
     padding: 0 1.25rem;
     margin: .4rem 0;
     border-right: 1px solid var(--color-dark);
@@ -43,7 +43,7 @@ footer {
 
 .footer__contact p,
 .footer__contact a {
-    font-size: .875rem;
+    font-size: var(--size-14);
     padding: .5rem 0;
 }
 
@@ -56,6 +56,7 @@ footer {
     margin: 0 1.875rem;
     fill: var(--color-light);
     transition: .5s;
+    width: 21px;
 }
 
 .footer__social-media svg:hover {
@@ -68,16 +69,19 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 2.563rem;
+    font-size: var(--size-12);
 }
 
 .language__active {
     color: var(--color-light) !important;
+    cursor: default;
 }
 
 .footer__language a {
     padding: 0 10px;
     border-right: 1px solid var(--color-dark);
     color: var(--color-dark-variant);
+    text-transform: uppercase;
 }
 
 .footer__language a:hover {
@@ -88,17 +92,48 @@ footer {
     border: none;
 }
 
-select {
-    background: var(--second-color);
-    border: 1px solid #5C5C5C;
-    color: var(--link-color);
-    line-height: .938rem;
-    padding: .438rem .75rem;
+.language__select {
+    width: 60px;
+}
+
+.select {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid var(--color-dark-variant-2);
+    padding: 8px 0;
+    font-size: var(--size-12);
+    color: var(--color-light);
+    cursor: pointer;
+    user-select: none;
+}
+
+.select__icon {
+    font-size: var(--size-12);
+}
+
+.select__content {
+    background: var(--color-light);
+    color: var(--color-font);
+    text-transform: uppercase;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+}
+
+.select__item {
+    padding: 5px 0;
+    transition: .5s;
     cursor: pointer;
 }
 
+.select__item:hover {
+    background-color: var(--color-primary);
+}
+
 .footer__description {
-    font-size: 0.813rem;
+    font-size: var(--size-13);
     margin-bottom: 2.563rem;
 }
 
@@ -119,6 +154,7 @@ select {
 }
 
 @media (min-width: 576px) {
+
     .footer__links,
     .footer__contact,
     .footer__social-media,
@@ -155,6 +191,7 @@ select {
 }
 
 @media (min-width: 992px) {
+
     .footer__links,
     .footer__contact,
     .footer__social-media,
@@ -165,6 +202,7 @@ select {
 }
 
 @media (min-width: 1200px) {
+
     .footer__links,
     .footer__contact,
     .footer__social-media,

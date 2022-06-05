@@ -14,7 +14,7 @@
 .mosaic__box div {
     margin-bottom: 1.125rem;
     height: 135px;
-    font-size: 1rem;
+    font-size:var(--size-16);
     text-transform: uppercase;
 }
 
@@ -81,7 +81,7 @@
 @media (min-width: 992px) {
     .mosaic__box div {
         height: 210px;
-        font-size: 1.5625rem;
+        font-size: var(--size-26);
         line-height: 1.875rem;
     }
     .mosaic__box h3 {
@@ -95,7 +95,11 @@
     }
 }
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    .mosaic__box div {
+        font-size: var(--size-38);
+    }
+}
 
 @media(min-width: 1840px) {
     .mosaic__box div {

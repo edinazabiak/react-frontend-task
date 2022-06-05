@@ -19,7 +19,23 @@
     --color-secondary: hsl(0, 0%, 13%);
     --color-dark: hsl(0, 0%, 36%);
     --color-dark-variant: hsl(0, 0%, 64%);
+    --color-dark-variant-2: hsl(0, 0%, 36%);
     --font-text: 'Quicksand', sans-serif;
+
+    --size-12: 0.75rem;
+    --size-13: 0.813rem;
+    --size-14: 0.875rem;
+    --size-16: 1rem;
+    --size-18: 1.125rem;
+    --size-20: 1.25rem;
+    --size-24: 1.5rem;
+    --size-26: 1.625rem;
+    --size-28: 1.75rem;
+    --size-32: 2rem;
+    --size-36: 2.25rem;
+    --size-38: 2.375rem;
+    --size-48: 3rem;
+    --size-130: 8.125rem;
 }
 
 /*============== BASE ==============*/
@@ -38,14 +54,14 @@ body {
     background: var(--color-light);
     color: var(--color-font);
     line-height: 1.7;
-    font-size: 1rem;
+    font-size: var(--size-16);
 }
 
 h1 {
     font-weight: 400;
     text-transform: uppercase;
     color: var(--color-light);
-    font-size: 2.25rem;
+    font-size: var(--size-36);
 }
 
 h1 span {
@@ -71,7 +87,7 @@ a:hover {
     padding: .6rem 2rem;
     border-width: 1px;
     border-style: solid;
-    font-size: 1rem;
+    font-size: var(--size-14);
     font-family: var(--font-text);
     text-transform: uppercase;
     cursor: pointer;
@@ -120,6 +136,13 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: 0 1rem;
+}
+
+.section__title {
+    font-size: var(--size-28);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 2rem 0;
 }
 
 .grid {

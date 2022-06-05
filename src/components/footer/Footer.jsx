@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './footer.css'
+import { IoIosArrowDown } from 'react-icons/io'
 import GLS from '../../assets/image 17.png'
 import DPD from '../../assets/image 20.png'
 import PAYPAL from '../../assets/image 18.png'
@@ -9,6 +10,14 @@ import HONAP from '../../assets/image 15.png'
 import ARUKERESO from '../../assets/image 16.png'
 
 export default function Footer() {
+
+    const [active, setActive] = useState(false)
+    const [selected, setSelected] = useState("Huf")
+
+    const handleClick = (s) => {
+        setSelected(s);
+        setActive(false);
+    }
 
     return (
         <footer>
@@ -58,22 +67,28 @@ export default function Footer() {
                 </div>
                 <p class="footer__description">&copy; 2021 Teszts téma</p>
                 <div className="footer__language">
-                    <a href="#" className='language__active'>HU</a>
-                    <a href="#">EN</a>
+                    <a href="#" className='language__active'>Hu</a>
+                    <a href="#">En</a>
                     <div className='language__select'>
-                        <select>
-                            <option value="Huf" selected>Huf</option>
-                            <option value="Eur">Eur</option>
-                            <option value="Usd">Usd</option>
-                        </select>
+                        <div className="select" onClick={() => setActive(!active)}>
+                            {selected}
+                            <IoIosArrowDown className='select__icon' />
+                        </div>
+                        {active === true ?
+                            <div className="select__content">
+                                <div className="select__item" onClick={() => handleClick("Huf")}>Huf</div>
+                                <div className="select__item" onClick={() => handleClick("Eur")}>Eur</div>
+                                <div className="select__item" onClick={() => handleClick("Usd")}>Usd</div>
+                            </div>
+                            : null}
                     </div>
                 </div>
                 <p className="footer__description">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-                    ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut 
-                    fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                    ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                    fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
                     qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                 </p>
             </div>
